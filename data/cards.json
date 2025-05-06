@@ -1,0 +1,28 @@
+{
+    "legumes": [
+        {
+            "image": "../medias/memory-legume/1.svg",
+            "name": "pomme"
+        },
+        {
+            "image": "../medias/memory-legume/2.svg",
+            "name": "banane"
+        },
+        {
+            "image": "../medias/memory-legume/3.svg",
+            "name": "brocoss"
+        },
+        {
+            "image": "../medias/memory-legume/4.svg",
+            "name": "cerise"
+        },
+        {
+            "image": "../medias/memory-legume/5.svg",
+            "name": "piment"
+        },
+        {
+            "image": "../medias/memory-legume/6.svg",
+            "name": "fraise"
+        }
+    ]
+}
