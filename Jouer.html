@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="medias/favicon.ico">
 </head>
 
 <body>
@@ -25,11 +26,18 @@
         </div>
     </header>
     <main>
-        <div class="box">
-         
+        <div class="box" id="jeu">
+         <p>Tentez de gagner avec le moins d'éssais possible. <br>
+            Appuyez sur la <strong>barre d'éspace</strong> pour relancer le jeu
+        </p>
+        <p>Nombre de coups : <span class="score"></span></p>
+        <div id="plateau"></div>
         </div>
     </main>
-
+    <template id="cartesJeu">
+        <img class="carte" src="" alt="">
+    </template>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>
