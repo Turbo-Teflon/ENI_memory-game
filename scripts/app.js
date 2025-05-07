@@ -3,6 +3,7 @@ let firstCard, secondCard;
 let locked = false;
 let cards = [];
 let score = 0;
+let win = false;
 
 document.querySelector(".score").textContent = score;
 fetch("./data/cards.json")
@@ -60,10 +61,10 @@ function flipCard() {
     document.querySelector(".score").textContent = score;
     locked = true;
 
-    check();
+    checkMatch();
 }
 
-function check(){
+function checkMatch(){
     let isMatch = firstCard.getAttribute("name") === secondCard.getAttribute("name");
     isMatch ? disableCards() : unflipCards();
 }
@@ -71,6 +72,7 @@ function check(){
 function disableCards(){
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
+    checkWin();
     resetPlateau();
 }
 
@@ -83,6 +85,17 @@ function unflipCards(){
         resetPlateau();
     }, 2000);
 }
+function checkWin() {
+    win = true;
+    $divJeu.querySelectorAll(".carte").forEach(carte => {
+        if(!carte.classList.contains("flipped")){
+            win = false;
+        }
+    })
+    if (win) {
+        $divJeu.insertAdjacentHTML("afterend", `<p class="win">Vous avez gagné en ${score} coups !</p>`)
+    }
+}
 
 function resetPlateau(){
     firstCard= null;
@@ -94,6 +107,7 @@ function restartGame() {
     shuffle(cards);
     score = 0;
     document.querySelector(".score").textContent = score;
+    document.querySelectorAll(".win").forEach(e => e.innerHTML = "");
     $divJeu.innerHTML = "";
     afficheCartes(cards);
 }
