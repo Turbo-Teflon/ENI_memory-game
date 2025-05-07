@@ -11,6 +11,11 @@ fetch("./data/cards.json")
     cards = [...data.legumes, ...data.legumes];
     shuffle(cards);
     afficheCartes(cards);
+    document.addEventListener("keypress", e => {
+        if (e.code === "Space") {
+            restartGame();
+        }
+    })
 });
 
 function shuffle(paquet) {
@@ -83,4 +88,12 @@ function resetPlateau(){
     firstCard= null;
     secondCard= null;
     locked = false;
+}
+function restartGame() {
+    resetPlateau();
+    shuffle(cards);
+    score = 0;
+    document.querySelector(".score").textContent = score;
+    $divJeu.innerHTML = "";
+    afficheCartes(cards);
 }
