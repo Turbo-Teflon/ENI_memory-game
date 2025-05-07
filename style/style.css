@@ -46,11 +46,52 @@ main{
 
 }
 
-.box img{
-    align-self: center;
-    width: 50%;
-}
 
 #jeu{
     text-align: center;
+}
+
+#plateau{
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, 120px);
+
+}
+
+.carte {
+    height: 120px;
+    width: 120px;
+    border-radius: 25px;
+    background-color: aliceblue;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+}
+.front-image{
+    width: 100%;
+}
+.carte.flipped{
+    transform: rotateY(180deg);
+}
+.front,
+ .back{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.carte .front{
+    
+    transform: rotateY(180deg);
+}
+.carte .back{
+    background-image: url(../medias/question.svg);
+    background-color: cadetblue;
+    border-radius: 25px;
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
 }
