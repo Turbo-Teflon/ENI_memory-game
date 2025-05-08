@@ -27,10 +27,41 @@
     </header>
     <main>
         <div class="box">
-
+            <h2>Inscrivez-vous</h2>
+            <form id="inscriptionForm" method="get">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label> <br>
+                    <input type="text" id="username" name="username" autofocus required
+                        placeholder="3 char. minimum" pattern=".{3,}" 
+                        title="Saisissez votre nom d'utilisateur (3 charactères mini)">
+                    <span id="userError" class="error"></span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">Entrez votre email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Votre email">
+                    <span id="emailError" class="error"></span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="mdp">Entrez votre mot de passe</label><br>
+                    <input type="password" name="mdp" id="mdp" placeholder="Votre mdp"
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,}$">
+                    <br>
+                    <span id="mdpError" class="error"></span>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="mdpConf">Confirmez votre mot de passe</label><br>
+                    <input type="password" name="mdpConf" id="mdpConf" placeholder="Confirmez votre mdp"><br>
+                    <span id="mdpConfError" class="error"></span>
+                </div>
+                <button type="submit" class="btn" id="submitBtn">Créer</button>
+                <button type="reset" class="btn" id="resetBtn">Annuler</button>
+            </form>
         </div>
     </main>
-
+    <script src="scripts/Inscription.js"></script>
 </body>
 
 </html>

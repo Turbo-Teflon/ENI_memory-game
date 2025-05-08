@@ -36,6 +36,14 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.error {
+    color: red;
+    font-size: 0.875rem;
+}
+.success {
+    color: green;
+    font-size: 0.875rem;
+}
 .box{
     display: flex;
     flex-direction: column;
@@ -43,9 +51,10 @@ main{
     width: 40rem;
     border-radius: 25px;
     padding: 1rem;
-
 }
-
+.box h2{
+    text-align: center;
+}
 
 #jeu{
     text-align: center;
