@@ -9,7 +9,7 @@ document.querySelector(".score").textContent = score;
 fetch("./data/cards.json")
 .then(res => res.json())
 .then(data => {
-    cards = [...data.legumes, ...data.legumes];
+    cards = [...data.animauxAnimes, ...data.animauxAnimes];
     shuffle(cards);
     afficheCartes(cards);
     document.addEventListener("keypress", e => {

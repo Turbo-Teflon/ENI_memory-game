@@ -21,7 +21,6 @@ nav a{
     color: aliceblue;
     text-decoration: none;
 }
-
 .menu ul {
     display: flex;
     flex-direction: row;
@@ -55,6 +54,13 @@ main{
 }
 .box h2{
     text-align: center;
+}
+.selection{
+    display: inline;
+}
+.selection img{
+    width: 50%;
+    padding-left: 3rem;
 }
 
 #jeu{

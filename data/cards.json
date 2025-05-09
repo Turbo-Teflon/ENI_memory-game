@@ -24,5 +24,40 @@
             "image": "./medias/memory-legume/6.svg",
             "name": "fraise"
         }
+    ],
+
+    "animauxAnimes": [
+        {
+            "image": "./medias/animauxAnimes/1.webp",
+            "name": "souris"
+        },
+        {
+            "image": "./medias/animauxAnimes/2.webp",
+            "name": "abeille"
+        },
+        {
+            "image": "./medias/animauxAnimes/3.webp",
+            "name": "hérisson"
+        },
+        {
+            "image": "./medias/animauxAnimes/4.webp",
+            "name": "grenouille"
+        },
+        {
+            "image": "./medias/animauxAnimes/5.webp",
+            "name": "poisson globe"
+        },
+        {
+            "image": "./medias/animauxAnimes/6.webp",
+            "name": "raie"
+        },
+                {
+            "image": "./medias/animauxAnimes/7.webp",
+            "name": "chenille"
+        },
+                {
+            "image": "./medias/animauxAnimes/8.webp",
+            "name": "méduse"
+        }
     ]
 }
