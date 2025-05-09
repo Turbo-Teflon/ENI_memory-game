@@ -93,7 +93,6 @@ main{
     width: 100%;
 }
 .carte .front{
-    
     transform: rotateY(180deg);
 }
 .carte .back{
