@@ -12,6 +12,7 @@ h1{
     font-weight: normal;
     font-size: 3rem;
 }
+
 div.menu{
     background-color: rgb(61, 79, 105);
     width:fit-content;
@@ -102,4 +103,8 @@ main{
     background-position: center center;
     background-size: cover;
     backface-visibility: hidden;
+}
+
+.disable{
+    display: none;
 }

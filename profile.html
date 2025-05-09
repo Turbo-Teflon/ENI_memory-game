@@ -27,10 +27,23 @@
     </header>
     <main>
         <div class="box">
-            
+            <h2>Profil</h2>
+            <div class="not-connected disable">
+                <p>Aucun profil n'est connecté : </p>
+                <a href="signIn.html">Se connecter</a>
+                <a href="signUp.html">S'inscrire</a>
+            </div>
+            <div class="connected">
+                <p>Nom d'utilisateur : </p>
+                <p class="username"></p><hr>
+                <p>Email : </p>
+                <p class="email"></p><hr>
+
+                <button type="button" id="deco">Déconnexion</button>
+            </div>
         </div>
     </main>
-
+    <script src="scripts/profile.js"></script>
 </body>
 
 </html>

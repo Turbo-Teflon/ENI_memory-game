@@ -21,6 +21,7 @@ submitBtn.addEventListener("click", () => {
         if (password.value === user.mdp) {
           sessionStorage.setItem("currentUser", JSON.stringify(user));
 					alert("Connexion Réussie, bienvenu " + user.nom);
+          document.location.href= "./profile.html";
         } else {
           mdpError.textContent = MDP_ERROR;
           mdpError.classList.remove("success");
