@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1>ENI - <strong>MEMORY</strong> - Accueil</h1>
+        <h1>ENI - <strong>MEMORY</strong> - Connexion</h1>
         <div class="menu">
             <nav>
                 <ul class="menu">
@@ -27,10 +27,28 @@
     </header>
     <main>
         <div class="box">
-
+            <form>
+                <h2>Connectez-vous</h2>
+                <form id="inscriptionForm" method="get">
+                    <div class="form-group">
+                        <label for="email">Entrez votre email</label><br>
+                        <input type="email" name="email" id="email" placeholder="Votre email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="mdp">Entrez votre mot de passe</label><br>
+                        <input type="password" name="mdp" id="mdp" placeholder="Votre mdp">
+                        <br>
+                        <span id="mdpError" class="error"></span><br>
+                    </div>
+                    <button type="button" class="btn" id="submitBtn">Connexion</button>
+                    <button type="reset" class="btn" id="resetBtn">Annuler</button>
+            </form>
         </div>
-    </main>
 
+    </main>
+<script src="scripts/connect.js"></script>
 </body>
 
 </html>
